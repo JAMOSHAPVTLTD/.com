@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JA MOSHA AGARBATTI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .scroll-reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
+    .nav-toggle { display: none; cursor: pointer; color: #fff; font-size: 1.5rem; }
+    @media (max-width: 768px) {
+      .nav ul { display: none; flex-direction: column; background: #2c3e50; padding: 1rem; }
+      .nav ul.show { display: flex; }
+      .nav-toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">JA MOSHA</a>
+      <div class="nav-toggle">☰</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content scroll-reveal">
+      <h1>100% Natural Mosquito Repellent Incense Sticks</h1>
+      <p>Experience purity and protection with every stick.</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- Product Filter Buttons -->
+  <div class="container" style="text-align: center; margin-top: 2rem;">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="p1">P1</button>
+    <button class="filter-btn" data-filter="p2">P2</button>
+  </div>
+
+  <!-- Products Section -->
+  <section id="products" class="products scroll-reveal">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card" data-category="p1">
+          <img src="p1.jpg" alt="P1 Agarbatti" />
+          <h3>P1 Agarbatti</h3>
+          <p>Essential oil infused incense for a calm, mosquito-free environment.</p>
+          <span class="price">₹10 | 12 Sticks</span>
+        </div>
+        <div class="product-card" data-category="p2">
+          <img src="p2.jpg" alt="P2 Agarbatti" />
+          <h3>P2 Agarbatti</h3>
+          <p>Herbal blend to naturally repel mosquitoes and purify your space.</p>
+          <span class="price">₹10 | 12 Sticks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about scroll-reveal">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>JA MOSHA AGARBATTI brings you 100% natural incense sticks crafted from premium ingredients to provide safe and effective mosquito protection. Our mission is to blend tradition with innovation for a healthier home.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact scroll-reveal">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required /><br><br>
+        <input type="email" name="email" placeholder="Your Email" required /><br><br>
+        <input type="tel" name="phone" placeholder="Phone Number" required /><br><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+      <p>&copy; 2025 JA MOSHA AGARBATTI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
